@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mysql://localhost:5505/flywaydb?useSSL=false&characterEncoding=utf8&autoReconnection=true
+    username: flyway
+    password: 1234
+    validation-query: SELECT 1
+
+
+logging.level:
+  org.hibernate: debug
+#    type: trace
+#    stat: debug
