@@ -1,9 +1,11 @@
 package com.example.jpa.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "person")
@@ -21,4 +23,6 @@ public class Person {
     @Column(nullable = false)
     private Integer age;
 
+    @JsonFormat(pattern = "yyyy-mm-dd")
+    private LocalDateTime birthday;
 }

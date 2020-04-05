@@ -68,3 +68,13 @@ management:
     }
 }
 ```
+
+## Flyway migration
+
+### insert data
+  * add 'resources/db/migration/V2__person_data.sql'
+  * check db table _flyway_schema_history_
+![flyway_schema_history](https://user-images.githubusercontent.com/3349859/78502028-e2faa480-7799-11ea-90ea-016e1f089438.png)
+
+### alter table
+  * add 'resources/db/migration/V3__person_add_birthday.sql'
